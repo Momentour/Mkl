@@ -1,0 +1,198 @@
+#DO NOT USE TKINTER
+#CONVERT TO C++, USE WITH QT
+
+from tkinter import *
+import random
+
+
+class Table:
+
+    def Callback(self):
+        self.txt_file = open('Table.doc', 'a')
+        self.text = self.mEntry.get()
+        list(self.text)
+        for letter in self.text:
+            if letter == 'A':
+                self.txt_file.write('A ')
+            elif letter == 'B':
+                self.txt_file.write('B ')
+            elif letter == 'C':
+                self.txt_file.write('C ')
+            elif letter == 'D':
+                self.txt_file.write('D ')
+            elif letter == 'E':
+                self.txt_file.write('E ')
+            elif letter == 'F':
+                self.txt_file.write('F ')
+            elif letter == 'G':
+                self.txt_file.write('G ')
+            elif letter == 'H':
+                self.txt_file.write('H ')
+            elif letter == 'I':
+                self.txt_file.write('I ')
+            elif letter == 'J':
+                self.txt_file.write('J ')
+            elif letter == 'K':
+                self.txt_file.write('K ')
+            elif letter == 'L':
+                self.txt_file.write('L ')
+            elif letter == 'M':
+                self.txt_file.write('M ')
+            elif letter == 'N':
+                self.txt_file.write('N ')
+            elif letter == 'O':
+                self.txt_file.write('O ')
+            elif letter == 'P':
+                self.txt_file.write('P ')
+            elif letter == 'Q':
+                self.txt_file.write('Q ')
+            elif letter == 'R':
+                self.txt_file.write('R ')
+            elif letter == 'S':
+                self.txt_file.write('S ')
+            elif letter == 'T':
+                self.txt_file.write('T ')
+            elif letter == 'U':
+                self.txt_file.write('U ')
+            elif letter == 'V':
+                self.txt_file.write('V ')
+            elif letter == 'W':
+                self.txt_file.write('W ')
+            elif letter == 'X':
+                self.txt_file.write('X ')
+            elif letter == 'Y':
+                self.txt_file.write('Y ')
+            elif letter == 'Z':
+                self.txt_file.write('Z ')
+            elif letter == ' ':
+                self.txt_file.write(' ')
+            elif letter == ',':
+                self.txt_file.write(',')
+            elif letter == ';':
+                self.txt_file.write(';')
+            elif letter == ':':
+                self.txt_file.write(':')
+            elif letter == '.':
+                self.txt_file.write('\n')
+                for letter in self.text:
+                    if letter == 'A':
+                        self.txt_file.write(self.A + ' ')
+                    elif letter == 'B':
+                        self.txt_file.write(self.B + ' ')
+                    elif letter == 'C':
+                        self.txt_file.write(self.C + ' ')
+                    elif letter == 'D':
+                        self.txt_file.write(self.D + ' ')
+                    elif letter == 'E':
+                        self.txt_file.write(self.E + ' ')
+                    elif letter == 'F':
+                        self.txt_file.write(self.F  + ' ')
+                    elif letter == 'G':
+                        self.txt_file.write(self.G + ' ')
+                    elif letter == 'H':
+                        self.txt_file.write(self.H + ' ')
+                    elif letter == 'I':
+                        self.txt_file.write(self.I + ' ')
+                    elif letter == 'J':
+                        self.txt_file.write(self.J + ' ')
+                    elif letter == 'K':
+                        self.txt_file.write(self.K + ' ')
+                    elif letter == 'L':
+                        self.txt_file.write(self.L + ' ')
+                    elif letter == 'M':
+                        self.txt_file.write(self.M + ' ')
+                    elif letter == 'N':
+                        self.txt_file.write(self.N + ' ')
+                    elif letter == 'O':
+                        self.txt_file.write(self.O + ' ')
+                    elif letter == 'P':
+                        self.txt_file.write(self.P + ' ')
+                    elif letter == 'Q':
+                        self.txt_file.write(self.Q + ' ')
+                    elif letter == 'R':
+                        self.txt_file.write(self.R + ' ')
+                    elif letter == 'S':
+                        self.txt_file.write(self.S + ' ')
+                    elif letter == 'T':
+                        self.txt_file.write(self.T + ' ')
+                    elif letter == 'U':
+                        self.txt_file.write(self.U + ' ')
+                    elif letter == 'V':
+                        self.txt_file.write(self.V + ' ')
+                    elif letter == 'W':
+                        self.txt_file.write(self.W + ' ')
+                    elif letter == 'X':
+                        self.txt_file.write(self.X + ' ')
+                    elif letter == 'Y':
+                        self.txt_file.write(self.Y + ' ')
+                    elif letter == 'Z':
+                        self.txt_file.write(self.Z + ' ')
+                    else:
+                        self.txt_file.write('  ')
+                    
+            
+            
+    
+    def __init__(self, master = None):
+        #Master widget
+        self.mButton = Button(root, text='Ready!', command = self.Callback)
+        self.mButton.pack(side = BOTTOM, fill=X)
+        root.geometry('400x250')
+        self.mEntry = Entry(root)
+        self.mEntry.pack(fill=X)
+
+    def MissL(self, mLetter):
+        for letter in self.txt_file:
+            self.mLetter = random.choice(self_txt.file)
+        
+    
+    def File(self):
+        #Alphabet
+        self.txt_file = open('Table.doc', 'a')
+        self.A = str(random.randint(10, 70))
+        self.B = str(random.randint(10, 70))
+        self.C = str(random.randint(10, 70))
+        self.D = str(random.randint(10, 70))
+        self.E = str(random.randint(10, 70))
+        self.F = str(random.randint(10, 70))
+        self.G = str(random.randint(10, 70))
+        self.H = str(random.randint(10, 70))
+        self.I = str(random.randint(10, 70))
+        self.J = str(random.randint(10, 70))
+        self.K = str(random.randint(10, 70))
+        self.L = str(random.randint(10, 70))
+        self.M = str(random.randint(10, 70))
+        self.N = str(random.randint(10, 70))
+        self.O = str(random.randint(10, 70))
+        self.P = str(random.randint(10, 70))
+        self.Q = str(random.randint(10, 70))
+        self.R = str(random.randint(10, 70))
+        self.S = str(random.randint(10, 70))
+        self.T = str(random.randint(10, 70))
+        self.U = str(random.randint(10, 70))
+        self.V = str(random.randint(10, 70))
+        self.W = str(random.randint(10, 70))
+        self.X = str(random.randint(10, 70))
+        self.Y = str(random.randint(10, 70))
+        self.Z = str(random.randint(10, 70))
+        
+        
+
+        self.txt_file.write('_______________________________________________________________________________\n')
+        self.txt_file.write('| A| B| C| D| E| F| G| H| I| J| K| L| M| N| O| P| Q| R| S| T| U| V| W| X| Y| Z|\n')
+        self.txt_file.write('-------------------------------------------------------------------------------\n')
+        self.txt_file.write('|'+ self.A + '|'+ self.B + '|' + self.C + '|' + self.D + '|' + self.E + '|' + self.F + '|' + self.G + '|' + self.H + '|' + self.I + '|' + self.J + '|' + self.K + '|' + self.L + '|' + self.M + '|' + self.N + '|' + self.O + '|' + self.P + '|' + self.Q + '|' + self.R + '|' + self.S + '|' + self.T + '|' + self.U + '|' + self.V + '|' + self.W + '|' + self.X + '|'+ self.Y + '|' + self.Z + '| \n')
+        self.txt_file.write('-------------------------------------------------------------------------------\n')
+        self.txt_file.close()
+                
+
+
+
+               
+#Master window and mainloop
+
+
+root = Tk()
+window = Table(master = root)
+window.File()
+root.mainloop()
